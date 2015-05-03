@@ -29,7 +29,7 @@ UIAlertController の使い方と同様です。
     // アラートの場合は preferredStyle に UIAlertControllerStyleAlert を指定
     UIAlertManager *manager = [UIAlertManager managerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     [manager showInViewController:viewController actions:actions completion:nil];
-
+  
 __アクションシートを表示する例__  
 こちらも UIAlertController の使い方と同様です。  
 
@@ -56,7 +56,7 @@ __アクションシートを表示する例__
     // アクションシートの場合は preferredStyle に UIAlertControllerStyleActionSheet を指定
     UIAlertManager *manager = [UIAlertManager managerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
     [manager showInViewController:self actions:actions completion:nil];
-
+  
 __アラートにテキストフィールドを追加する場合__  
 テキストビューの追加の方法には ios7 以前の方法を採用しました。ios8 の方が自由度が高い為に挙動は制限はされますが、ios7 で予期しない動作になる事を防ぎます。  
 
