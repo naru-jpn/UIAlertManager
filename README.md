@@ -8,7 +8,7 @@
 UIAlertManager.h(.m) はコピーしてプロジェクトに追加して下さい。  
 
 __アラートを表示する例__  
-UIAlertController の使い方に似ています。  
+UIAlertController の使い方と同様です。  
 
     NSString *title = @"Alert title";
     NSString *message = @"Alert message";
@@ -31,7 +31,7 @@ UIAlertController の使い方に似ています。
     [manager showInViewController:viewController actions:actions completion:nil];
 
 __アクションシートを表示する例__  
-こちらも UIAlertController の使い方に似ています。  
+こちらも UIAlertController の使い方と同様です。  
 
     NSString *title = @"Action sheet title";
     NSString *message = @"Action sheet message";
