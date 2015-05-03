@@ -29,7 +29,7 @@ UIAlertController の使い方と同様です。
     // アラートの場合は preferredStyle に UIAlertControllerStyleAlert を指定
     UIAlertManager *manager = [UIAlertManager managerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     [manager showInViewController:viewController actions:actions completion:nil];
-
+　  
 __アクションシートを表示する例__  
 こちらも UIAlertController の使い方と同様です。  
 
