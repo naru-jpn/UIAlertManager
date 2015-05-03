@@ -14,15 +14,15 @@ UIAlertController の使い方に似ています。
     NSString *message = @"Alert message";
     NSArray *actions = @[
       // 選択肢1
-      [UIAlertManagedAction actionWithTitle:@"title1" style:UIAlertActionStyleDefault handler:^(UIAlertManagedAction *action){
+      [UIAlertManagedAction actionWithTitle:@"title1" style:UIAlertActionStyleDefault handler:^(NSDictionary *info){
         NSLog(@"clicked 1");
       }],
       // 選択肢2
-      [UIAlertManagedAction actionWithTitle:@"title2" style:UIAlertActionStyleDefault handler:^(UIAlertManagedAction *action){
+      [UIAlertManagedAction actionWithTitle:@"title2" style:UIAlertActionStyleDefault handler:^(NSDictionary *info){
         NSLog(@"clicked 2");
       }],
       // キャンセル
-      [UIAlertManagedAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:^(UIAlertManagedAction *action){
+      [UIAlertManagedAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:^(NSDictionary *info){
         NSLog(@"canceled");
       }]
     ];
@@ -37,19 +37,19 @@ __アクションシートを表示する例__
     NSString *message = @"Action sheet message";
     NSArray *actions = @[
       // 選択肢1 (UIAlertActionStyleDestructive は赤文字で表示されます)
-      [UIAlertManagedAction actionWithTitle:@"destructive" style:UIAlertActionStyleDestructive handler:^(UIAlertManagedAction *action){
+      [UIAlertManagedAction actionWithTitle:@"destructive" style:UIAlertActionStyleDestructive handler:^(NSDictionary *info)){
         NSLog(@"destructive");
       }],
       // 選択肢2
-      [UIAlertManagedAction actionWithTitle:@"title1" style:UIAlertActionStyleDefault handler:^(UIAlertManagedAction *action){
+      [UIAlertManagedAction actionWithTitle:@"title1" style:UIAlertActionStyleDefault handler:^(NSDictionary *info){
         NSLog(@"clicked 1");
       }],
       // 選択肢3
-      [UIAlertManagedAction actionWithTitle:@"title2" style:UIAlertActionStyleDefault handler:^(UIAlertManagedAction *action){
+      [UIAlertManagedAction actionWithTitle:@"title2" style:UIAlertActionStyleDefault handler:^(NSDictionary *info){
         NSLog(@"clicked 2");
       }],
       // キャンセル
-      [UIAlertManagedAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:^(UIAlertManagedAction *action){
+      [UIAlertManagedAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:^(NSDictionary *info){
         NSLog(@"canceled");
       }]
     ];
